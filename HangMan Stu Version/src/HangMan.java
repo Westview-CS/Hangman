@@ -89,7 +89,8 @@ public class HangMan extends JPanel implements ActionListener {
                         total = 40;
                         shift();
                         label_strikes.setText(Logic.addStrike(label_strikes.getText(), b.getText()));
-                    } else if (Logic.withoutSpaces(label_word.getText()).equals(word)) {
+                    } 
+                    if (Logic.withoutSpaces(label_word.getText()).equals(word)) {
                         for (Panda p : pandas) {
 
                             if (p.label != null) {
