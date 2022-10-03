@@ -80,10 +80,11 @@ public class Logic {
      * @param guess letter or word guessed by the player
      * @return new version of displayed text
      * Example: 
-     * encrypt(hello, h****,e) -> he*** 
-     * encrypt(hello, h****,x) -> h****
-     * encrypt(hello, h****,l) -> h*ll*
-     * encrypt(what, *****, w) -> w****
+     * encrypt(hello, h****,e) -> he*** (the e is revealed)
+     * encrypt(hello, h****,x) -> h**** (no change, x is not in the word)
+     * encrypt(hello, h****,l) -> h*ll* (the two ls are revealed)
+     * encrypt(what, ****, w) -> w**** (the w gets revealed)
+     * encrypt(what, ****, o) -> **** (no change, guess was not in word)
      */
     public static String encrypt(String word, String curr, String guess) {
         String result = "";
