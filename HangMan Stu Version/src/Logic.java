@@ -27,6 +27,7 @@ public class Logic {
      * add the current guess to the list. If the letter already exists then don't add it.
      * addStrike("rslt","n")->"rsltn"
      * addStrike("abc","n")->"abcn"
+     * addStrike("abc", "c") -> "abc" (unchanged because c already exist in the strike list)
      * @param list current list of strikes or incorrect guesses
      * @param guess current incorrect guess
      * @return the new list containing the newly made incorrect guess
