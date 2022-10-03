@@ -79,6 +79,11 @@ public class Logic {
      * @param curr text shown to the player
      * @param guess letter or word guessed by the player
      * @return new version of displayed text
+     * Example: 
+     * encrypt(hello, h****,e) -> he*** 
+     * encrypt(hello, h****,x) -> h****
+     * encrypt(hello, h****,l) -> h*ll*
+     * encrypt(what, *****, w) -> w****
      */
     public static String encrypt(String word, String curr, String guess) {
         String result = "";
